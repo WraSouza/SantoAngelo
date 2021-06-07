@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SantoAngelo
+namespace SantoAngelo.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AppShell : Shell
+    public partial class PrincipalView : ContentPage
     {
-        public AppShell()
+        public PrincipalView()
         {
             InitializeComponent();
         }
