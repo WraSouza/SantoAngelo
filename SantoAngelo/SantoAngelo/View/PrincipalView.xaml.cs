@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using SantoAngelo.ViewModel;
+using SantoAngelo.Model;
+using static SantoAngelo.Model.Weather;
 
 namespace SantoAngelo.View
 {
@@ -15,6 +18,14 @@ namespace SantoAngelo.View
         public PrincipalView()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            //base.OnAppearing();
+            PrincipalViewModel principal = new PrincipalViewModel();
+            principal.GetWeather();
+
         }
     }
 }

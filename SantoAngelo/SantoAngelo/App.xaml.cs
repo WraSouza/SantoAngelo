@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SantoAngelo.ViewModel;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,8 +9,7 @@ namespace SantoAngelo
     {
         public App()
         {
-            InitializeComponent();
-
+            InitializeComponent();            
             MainPage = new AppShell();
         }
 

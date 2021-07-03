@@ -1,13 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Title="Seja Bem-Vindo(a)"
+             Title="Seja Bem-Vindo(a)"    
+             xmlns:mvvm="clr-namespace:SantoAngelo.ViewModel"
              x:Class="SantoAngelo.View.PrincipalView">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+
+    <ContentPage.BindingContext>
+        <mvvm:PrincipalViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>        
+            <Grid BackgroundColor="Black">
+                <Image Source="logoInicial.jpg"
+                       Opacity="0.5"
+                       Aspect="Fill"/>
+
+            
+            <StackLayout>
+                <Label Text="Santo Ângelo"
+                       TextColor="White"/>
+
+
+                <Label Text="{Binding temp}"                      
+                       TextColor="White"
+                       FontSize="20"/>
+
+
+                <Label Text="Santo Ângelo é um município brasileiro localizado no estado do Rio Grande do Sul. Pertence à mesorregião do Noroeste Rio-Grandense e à microrregião de Santo Ângelo. É o maior município da região das Missões, com 78.908 habitantes.A Capital das Missões, como é chamado, destaca-se como um centro de serviços públicos, por sediar vários órgãos das esferas estadual e federal. Terra com história riquíssima e belezas naturais e arquitetônicas, Santo Ângelo desponta novamente como um dos polos do Noroeste do Rio Grande do Sul, tendo a segunda maior população, ficando atrás apenas de Ijuí."
+                       TextColor="White"
+                       FontSize="15"/>
+            </StackLayout>
+        </Grid>           
+        
     </ContentPage.Content>
 </ContentPage>
