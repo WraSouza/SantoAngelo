@@ -4,10 +4,8 @@
              Title="Localização"
              x:Class="SantoAngelo.View.LocalizacaoView">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout x:Name="MapContainer">
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

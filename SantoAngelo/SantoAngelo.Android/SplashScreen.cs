@@ -5,6 +5,9 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +20,8 @@ namespace SantoAngelo.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            AppCenter.Start("f3bdb953-53d2-4f79-8011-0e2d4328250f",
+                   typeof(Analytics), typeof(Crashes));
             base.OnCreate(savedInstanceState);
             StartActivity(typeof(MainActivity));
             Finish();

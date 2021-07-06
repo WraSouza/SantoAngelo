@@ -1,22 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Shell xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             BackgroundColor="Black"
-             FlyoutBackgroundImage="logoInicial.jpg"
-             FlyoutBackgroundImageAspect="AspectFill"
-             Opacity="0.9"
+             BackgroundColor="Black"               
+             FlyoutBackgroundImageAspect="AspectFill"               
              xmlns:views="clr-namespace:SantoAngelo.View"
              x:Class="SantoAngelo.AppShell">    
     
-    <FlyoutItem Title="Home">
+    <FlyoutItem Title="Início" Icon="home.png">
         <ShellContent ContentTemplate="{DataTemplate views:PrincipalView}"/>
     </FlyoutItem>
-    <FlyoutItem Title="Atrativos">
+
+    <FlyoutItem Title="Localização" Icon="location.png">
+        <ShellContent ContentTemplate="{DataTemplate views:LocalizacaoView}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Atrativos Turísticos" Icon="explore.png">
         <ShellContent ContentTemplate="{DataTemplate views:AtrativosView}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Localização">
-        <ShellContent ContentTemplate="{DataTemplate views:LocalizacaoView}"/>
+    <FlyoutItem Title="Telefones Úteis" Icon="phone.png">
+        <ShellContent ContentTemplate="{DataTemplate views:TelefonesView}"/>
     </FlyoutItem>
+
+
 
 </Shell>
