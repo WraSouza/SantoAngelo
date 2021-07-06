@@ -4,10 +4,64 @@
              Title="Telefones Úteis"
              x:Class="SantoAngelo.View.TelefonesView">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid ColumnDefinitions="160,*" Margin="30,30,30,0" RowDefinitions="160,160">
+            
+            <!--Polícia-->
+            <Frame Grid.Column="0" 
+                   Grid.Row="0"
+                   BorderColor="Black"
+                   CornerRadius="10">
+                <StackLayout>
+                    <Image Source="policeman.png"/>
+                    <Label Text="Polícia"
+                           TextColor="Black"
+                           FontSize="20"
+                           HorizontalOptions="Center"/>
+                    <Label Text="190"
+                           TextColor="Black"
+                           FontSize="20"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!--Bombeiros-->
+            <Frame Grid.Column="1" 
+                   Grid.Row="0"
+                   BorderColor="Black"
+                   CornerRadius="10">
+                <StackLayout>
+                    <Image Source="fireman.png"
+                           HorizontalOptions="Center"/>
+                    <Label Text="Bombeiros"
+                           TextColor="Black"
+                           FontSize="20"
+                           HorizontalOptions="Center"/>
+                    <Label Text="193"
+                           TextColor="Black"
+                           FontSize="20"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!--SAMU-->
+            <Frame Grid.Column="0" 
+                   Grid.Row="1"
+                   BorderColor="Black"
+                   CornerRadius="10">
+                <StackLayout>
+                    <Image Source="hospital.png"/>
+                    <Label Text="SAMU"
+                           TextColor="Black"
+                           FontSize="20"
+                           HorizontalOptions="Center"/>
+                    <Label Text="192"
+                           TextColor="Black"
+                           FontSize="20"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
