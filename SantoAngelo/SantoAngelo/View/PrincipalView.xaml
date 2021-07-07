@@ -33,6 +33,15 @@
                        TextColor="White"
                        Margin="5,0,5,0"
                        FontSize="18"/>
+
+                <ScrollView Orientation="Horizontal" Margin="5,30,0,0">
+                    <StackLayout HeightRequest="200" Orientation="Horizontal">
+                        <Image Source="Aeroporto.jpg"/>
+                        <Image Source="pracaCentral.jpg"/>
+                        <Image Source="museuaberto.png"/>
+                    </StackLayout>
+                </ScrollView>
+                
             </StackLayout>
         </Grid>           
         
