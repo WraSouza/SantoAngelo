@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -28,6 +31,8 @@ namespace SantoAngelo.UWP
         /// </summary>
         public App()
         {
+            AppCenter.Start("751792d4-2e5b-4526-b562-4f952fe7cc9c",
+                   typeof(Analytics), typeof(Crashes));
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
@@ -56,6 +61,7 @@ namespace SantoAngelo.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
+                global::Xamarin.Forms.Forms.SetFlags("Shell_UWP_Experimental");
                 Xamarin.Forms.Forms.Init(e);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
