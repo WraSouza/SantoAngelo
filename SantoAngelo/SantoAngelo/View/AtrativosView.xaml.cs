@@ -16,5 +16,10 @@ namespace SantoAngelo.View
         {
             InitializeComponent();
         }
+
+        private void openCatedralView(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.CatedralView());
+        }
     }
 }

@@ -4,10 +4,64 @@
              Title="Atrativos Turísticos"
              x:Class="SantoAngelo.View.AtrativosView">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid BackgroundColor="Black">
+            <Image Source="turismo.jpg"
+                       Opacity="0.2"
+                       Aspect="Fill"/>
+            
+            <StackLayout>
+                <Grid RowDefinitions="150,150" ColumnDefinitions="200,Auto">
+                    <!--Catedral Angelopolitana-->
+                    <Image Source="catedralInicial.jpg"
+                      Grid.Column="0"
+                      Grid.Row="0"/>
+
+                    <Label Text="Catedral Angelopolitana"
+                           TextColor="White"
+                           FontSize="20"
+                           Grid.Column="0"
+                           Grid.Row="0"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"/>
+
+                    <Image Source="add.png"
+                           HeightRequest="50"
+                           VerticalOptions="End"
+                           HorizontalOptions="End"
+                           Grid.Column="0"
+                           Grid.Row="0">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="openCatedralView"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                    <!--Museu Municipal-->
+                    <Image Source="museumunicipal.jpg"
+                      Grid.Column="1"
+                      Grid.Row="0"/>
+
+                    <Label Text="Museu Municipal"                           
+                           TextColor="White"
+                           FontSize="20"
+                           Grid.Column="1"
+                           Grid.Row="0"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"/>
+
+                    <Image Source="add.png"
+                           HeightRequest="50"
+                           VerticalOptions="End"
+                           HorizontalOptions="End"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+
+                    <!--TO DO-->
+                    <Image Source="catedralInicial.jpg"
+                      Grid.Column="0"
+                      Grid.Row="1"/>
+                </Grid>
+            </StackLayout>
+            
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
