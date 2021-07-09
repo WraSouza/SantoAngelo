@@ -15,7 +15,7 @@
                         <ColumnDefinition>
                             <ColumnDefinition.Width>
                                 <OnPlatform x:TypeArguments="GridLength">
-                                    <On Platform="UWP" Value="400"/>
+                                    <On Platform="UWP" Value="*"/>
                                     <On Platform="Android" Value="200"/>
                                 </OnPlatform>
                             </ColumnDefinition.Width>                           
