@@ -8,31 +8,22 @@
             <Image Source="turismo.jpg"
                        Opacity="0.2"
                        Aspect="Fill"/>
-            
+            <ScrollView>
             <StackLayout>
-                <Grid>
+                <Grid RowDefinitions="200,200,200">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition>
                             <ColumnDefinition.Width>
                                 <OnPlatform x:TypeArguments="GridLength">
                                     <On Platform="UWP" Value="*"/>
-                                    <On Platform="Android" Value="200"/>
+                                    <On Platform="Android" Value="*"/>
                                 </OnPlatform>
                             </ColumnDefinition.Width>                           
                         </ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition>
-                            <RowDefinition.Height>
-                                <OnPlatform x:TypeArguments="GridLength">
-                                    <On Platform="Android" Value="200"/>
-                                    <On Platform="UWP" Value="250"/>
-                                </OnPlatform>
-                            </RowDefinition.Height>
-                        </RowDefinition>
-                    </Grid.RowDefinitions>
-                    <!--Catedral Angelopolitana-->
+                        
+                        <!--Catedral Angelopolitana-->
                     <Image Source="catedralInicial.jpg"
                            Aspect="Fill"
                           Grid.Column="0"
@@ -78,13 +69,71 @@
                            Grid.Column="1"
                            Grid.Row="0"/>
 
-                    <!--TO DO-->
-                    <Image Source="catedralInicial.jpg"
-                      Grid.Column="0"
-                      Grid.Row="1"/>
-                </Grid>
+                    <!--Memorial Coluna Prestes-->
+                    <Image Source="memorialcolunaprestes.jpg"
+                           Aspect="Fill"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Label Text="Memorial Coluna Prestes"                           
+                           TextColor="White"
+                           FontSize="20"
+                           Grid.Column="0"
+                           Grid.Row="1"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"/>
+
+                    <Image Source="add.png"
+                           HeightRequest="50"
+                           VerticalOptions="End"
+                           HorizontalOptions="End"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+                    
+                    <!--Museu do Cinema-->
+                    <Image Source="museudocinema.jpg"
+                           Aspect="Fill"
+                           Grid.Column="1"
+                           Grid.Row="1"/>
+
+                    <Label Text="Museu do Cinema"                           
+                           TextColor="White"
+                           FontSize="20"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"/>
+
+                    <Image Source="add.png"
+                           HeightRequest="50"
+                           VerticalOptions="End"
+                           HorizontalOptions="End"
+                           Grid.Column="1"
+                           Grid.Row="1"/>
+                    
+                    <!--Museu Ferroviário-->
+                        <Image Source="museuferroviario.jpg"
+                           Aspect="Fill"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                        <Label Text="Museu Ferroviário"                           
+                           TextColor="White"
+                           FontSize="20"
+                           Grid.Column="0"
+                           Grid.Row="2"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Start"/>
+
+                        <Image Source="add.png"
+                           HeightRequest="50"
+                           VerticalOptions="End"
+                           HorizontalOptions="End"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+                    </Grid>
             </StackLayout>
-            
+            </ScrollView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

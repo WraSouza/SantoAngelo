@@ -161,10 +161,13 @@
     <Content Include="fireman.png" />
     <Content Include="home.png" />
     <Content Include="hospital.png" />
+    <Content Include="landscape.png" />
     <Content Include="location.png" />
     <Content Include="logoInicial.jpg" />
     <Content Include="memorialcolunaprestes.jpg" />
     <Content Include="museuaberto.png" />
+    <Content Include="museudocinema.jpg" />
+    <Content Include="museuferroviario.jpg" />
     <Content Include="museumunicipal.jpg" />
     <Content Include="phone.png" />
     <Content Include="policeman.png" />

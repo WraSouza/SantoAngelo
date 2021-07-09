@@ -14,7 +14,6 @@
                 <Image Source="logoInicial.jpg"
                        Opacity="0.4"
                        Aspect="Fill"/>
-
             
             <StackLayout>
                 <Label Text="Santo Ângelo"
