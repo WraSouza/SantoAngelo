@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace SantoAngelo.View
+namespace SantoAngelo.View.Tabbed.CatedralTabbed
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CatedralView : ContentPage
+    public partial class CatedralLocation : ContentPage
     {
-        public CatedralView()
+        public CatedralLocation()
         {
             InitializeComponent();
         }

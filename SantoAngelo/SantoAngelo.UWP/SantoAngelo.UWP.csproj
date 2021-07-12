@@ -159,6 +159,7 @@
     <Content Include="catedralInicial.jpg" />
     <Content Include="explore.png" />
     <Content Include="fireman.png" />
+    <Content Include="gallery.png" />
     <Content Include="home.png" />
     <Content Include="hospital.png" />
     <Content Include="landscape.png" />
