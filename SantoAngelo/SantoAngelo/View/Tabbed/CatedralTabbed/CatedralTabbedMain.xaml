@@ -4,9 +4,9 @@
             Title="Catedral Angelopolitana"
             BarBackgroundColor="Green"           
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-            android:TabbedPage.ToolbarPlacement="Bottom"     
-             android:TabbedPage.BarItemColor="Gray"
-            android:TabbedPage.BarSelectedItemColor="White"
+            android:TabbedPage.ToolbarPlacement="Bottom"            
+             android:TabbedPage.BarItemColor="Black"
+            android:TabbedPage.BarSelectedItemColor="White"            
             xmlns:pages="clr-namespace:SantoAngelo.View.Tabbed.CatedralTabbed"            
             x:Class="SantoAngelo.View.Tabbed.CatedralTabbed.CatedralTabbedMain">
 
