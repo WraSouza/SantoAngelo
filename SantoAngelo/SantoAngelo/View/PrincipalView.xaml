@@ -38,6 +38,7 @@
                         <Image Source="Aeroporto.jpg"/>                       
                         <Image Source="pracaCentral.jpg"/>
                         <Image Source="museuaberto.png"/>
+                        <Image Source="avenidaBrasil.jpg"/>
                     </StackLayout>
                 </ScrollView>
                 
