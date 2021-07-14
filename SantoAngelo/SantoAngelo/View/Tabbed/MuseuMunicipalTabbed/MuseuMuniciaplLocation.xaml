@@ -2,10 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Localização"
-             x:Class="SantoAngelo.View.Tabbed.CatedralTabbed.CatedralLocation">
+             x:Class="SantoAngelo.View.Tabbed.MuseuMunicipalTabbed.MuseuMuniciaplLocation">
     <ContentPage.Content>
         <StackLayout x:Name="MapContainer">
-
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -68,12 +68,16 @@
                            HorizontalOptions="Start"
                            VerticalOptions="Start"/>
 
-                    <Image Source="add.png"
+                        <Image Source="add.png"
                            HeightRequest="50"
                            VerticalOptions="End"
                            HorizontalOptions="End"
                            Grid.Column="1"
-                           Grid.Row="0"/>
+                           Grid.Row="0">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="openMuseuMunicipalView"/>
+                            </Image.GestureRecognizers>
+                        </Image>
 
                     <!--Memorial Coluna Prestes-->
                     <Image Source="memorialcolunaprestes.jpg"
