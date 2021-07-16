@@ -33,7 +33,13 @@
                        Margin="5,0,5,0"
                        FontSize="18"/>
 
-                <ScrollView Orientation="Horizontal" Margin="5,30,0,0">
+                <ScrollView Orientation="Horizontal">
+                    <ScrollView.Margin>
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="UWP" Value="5,40,0,0"/>
+                            <On Platform="Android" Value="5,30,0,0"/>
+                        </OnPlatform>
+                    </ScrollView.Margin>
                     <StackLayout Orientation="Horizontal">
                         <StackLayout.HeightRequest>
                             <OnPlatform x:TypeArguments="x:Double">
