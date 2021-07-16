@@ -14,7 +14,7 @@
                 <Image Source="logoInicial.jpg"
                        Opacity="0.4"
                        Aspect="Fill"/>
-            
+                
             <StackLayout>
                 <Label Text="Santo Ângelo"
                        HorizontalOptions="Center"
@@ -34,13 +34,28 @@
                        FontSize="18"/>
 
                 <ScrollView Orientation="Horizontal" Margin="5,30,0,0">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="UWP" Value="250"/>
+                                <On Platform="Android" Value="240"/>
+                            </OnPlatform>
+                        </StackLayout.HeightRequest>
+                        <Image Source="Aeroporto.jpg"/>
+                        <Image Source="pracaCentral.jpg"/>
+                        <Image Source="museuaberto.png"/>
+                        <Image Source="avenidaBrasil.jpg"/>
+                    </StackLayout>
+                </ScrollView>
+
+                <!--<ScrollView Orientation="Horizontal" Margin="5,30,0,0">
                     <StackLayout HeightRequest="200" Orientation="Horizontal">                       
                         <Image Source="Aeroporto.jpg"/>                       
                         <Image Source="pracaCentral.jpg"/>
                         <Image Source="museuaberto.png"/>
                         <Image Source="avenidaBrasil.jpg"/>
                     </StackLayout>
-                </ScrollView>
+                </ScrollView>-->
                 
             </StackLayout>
         </Grid>           
