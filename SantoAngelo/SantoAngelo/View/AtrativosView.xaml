@@ -93,12 +93,16 @@
                            HorizontalOptions="Start"
                            VerticalOptions="Start"/>
 
-                    <Image Source="add.png"
+                        <Image Source="add.png"
                            HeightRequest="50"
                            VerticalOptions="End"
                            HorizontalOptions="End"
                            Grid.Column="0"
-                           Grid.Row="1"/>
+                           Grid.Row="1">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="openMemorialPrestesView"/>
+                            </Image.GestureRecognizers>
+                        </Image>
                     
                     <!--Museu do Cinema-->
                     <Image Source="museudocinema.jpg"

@@ -4,8 +4,19 @@
              Title="Telefones Úteis"
              x:Class="SantoAngelo.View.TelefonesView">
     <ContentPage.Content>
-        <Grid ColumnDefinitions="160,*" Margin="30,30,30,0" RowDefinitions="160,160">
-            
+        <Grid Margin="30,30,30,0" RowDefinitions="160,160">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition>
+                    <ColumnDefinition.Width>
+                        <OnPlatform x:TypeArguments="GridLength">
+                            <On Platform="UWP" Value="*"/>
+                            <On Platform="Android" Value="*"/>
+                        </OnPlatform>
+                    </ColumnDefinition.Width>
+                </ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
             <!--Polícia-->
             <Frame Grid.Column="0" 
                    Grid.Row="0"

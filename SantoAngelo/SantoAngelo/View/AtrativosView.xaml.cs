@@ -26,5 +26,10 @@ namespace SantoAngelo.View
         {
             Navigation.PushAsync(new View.Tabbed.MuseuMunicipalTabbed.MuseuMunicipalTabbedMain());
         }
+
+        private void openMemorialPrestesView(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.Tabbed.MemorialPrestesTabbed.MemorialPrestesTabbedMain());
+        }
     }
 }

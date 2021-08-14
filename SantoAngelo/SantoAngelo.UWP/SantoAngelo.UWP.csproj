@@ -178,6 +178,14 @@
     <Content Include="landscape.png" />
     <Content Include="location.png" />
     <Content Include="logoInicial.jpg" />
+    <Content Include="memorial.jpg" />
+    <Content Include="memorial1.jpg" />
+    <Content Include="memorial2.jpg" />
+    <Content Include="memorial3.jpg" />
+    <Content Include="memorial4.jpg" />
+    <Content Include="memorial5.jpg" />
+    <Content Include="memorial6.jpg" />
+    <Content Include="memorial7.jpg" />
     <Content Include="memorialcolunaprestes.jpg" />
     <Content Include="museu1.jpg" />
     <Content Include="museu2.jpg" />
