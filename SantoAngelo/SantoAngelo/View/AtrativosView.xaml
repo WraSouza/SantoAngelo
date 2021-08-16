@@ -50,7 +50,7 @@
                            Grid.Column="0"
                            Grid.Row="0">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="openCatedralView"/>
+                            <TapGestureRecognizer Command="{Binding OpenCatedralView}"/>
                         </Image.GestureRecognizers>
                     </Image>                       
 
@@ -75,7 +75,7 @@
                            Grid.Column="1"
                            Grid.Row="0">
                             <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="openMuseuMunicipalView"/>
+                                <TapGestureRecognizer Command="{Binding OpenMuseuMunicipalView}"/>
                             </Image.GestureRecognizers>
                         </Image>
 
@@ -100,7 +100,7 @@
                            Grid.Column="0"
                            Grid.Row="1">
                             <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="openMemorialPrestesView"/>
+                                <TapGestureRecognizer Command="{Binding OpenMemorialPrestesView}"/>
                             </Image.GestureRecognizers>
                         </Image>
                     
@@ -118,12 +118,16 @@
                            HorizontalOptions="Start"
                            VerticalOptions="Start"/>
 
-                    <Image Source="add.png"
+                        <Image Source="add.png"
                            HeightRequest="50"
                            VerticalOptions="End"
                            HorizontalOptions="End"
                            Grid.Column="1"
-                           Grid.Row="1"/>
+                           Grid.Row="1">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenMuseuCinemaView}"/>
+                            </Image.GestureRecognizers>
+                        </Image>
                     
                     <!--Museu Ferroviário-->
                         <Image Source="museuferroviario.jpg"

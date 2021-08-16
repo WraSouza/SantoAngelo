@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Imagens"
+             x:Class="SantoAngelo.View.Tabbed.MuseuCinemaTabbed.MuseuCinemaImagens">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid RowDefinitions="200,200,200">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition>
+                            <ColumnDefinition.Width>
+                                <OnPlatform x:TypeArguments="GridLength">
+                                    <On Platform="UWP" Value="*"/>
+                                    <On Platform="Android" Value="*"/>
+                                </OnPlatform>
+                            </ColumnDefinition.Width>
+                        </ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="museuCinema1.jpg"
+                           Aspect="Fill"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+
+                    <Image Source="museuCinema2.jpg"
+                           Aspect="Fill"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+
+                    <Image Source="museuCinema3.jpg"
+                           Aspect="Fill"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Image Source="museuCinema4.jpg"
+                           Aspect="Fill"
+                           Grid.Column="1"
+                           Grid.Row="1"/>
+
+                    <Image Source="museuCinema5.jpg"
+                           Aspect="Fill"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                    <Image Source="museuCinema6.jpg"
+                           Aspect="Fill"
+                           Grid.Column="1"
+                           Grid.Row="2"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

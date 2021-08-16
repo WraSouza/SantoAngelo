@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            BarBackgroundColor="#FF514F"           
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"            
+            android:TabbedPage.BarItemColor="Black"
+            android:TabbedPage.BarSelectedItemColor="White" 
+            Title="Museu do Cinema"
+            xmlns:pages="clr-namespace:SantoAngelo.View.Tabbed.MuseuCinemaTabbed"
+             x:Class="SantoAngelo.View.Tabbed.MuseuCinemaTabbed.MuseuCinemaTabbedMain">
+
+    <pages:MuseuCinemaImagens IconImageSource="gallery.png"/>
+    <pages:MuseuCinemaLocalizacao IconImageSource="pin.png"/>
+
+</TabbedPage>

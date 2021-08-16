@@ -48,6 +48,15 @@
     <EmbeddedResource Update="View\Tabbed\MemorialPrestesTabbed\MemorialPrestesTabbedMain.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="View\Tabbed\MuseuCinemaTabbed\MuseuCinemaImagens.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Tabbed\MuseuCinemaTabbed\MuseuCinemaLocalizacao.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="View\Tabbed\MuseuCinemaTabbed\MuseuCinemaTabbedMain.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="View\Tabbed\MuseuMunicipalTabbed\MuseuMuniciaplLocation.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
